@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title text-center mt-5">
+        <h1 class="display-1">
+          Survey Name
+        </h1>
+        <p>Subtitle for the Survey Name</p>
+      </div>
+      <nav>
+      <div class="row d=flex justify-content-center">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <div class="col-4">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style="width: 100%; height: 100%;">Step 1<br>Personal Info</button>
+          </div>
+          <div class="col-4">
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style="width: 100%; height: 100%">Step 2<br>Questions w/answers</button>
+          </div>
+          <div class="col-4">
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" style="width: 100%; height: 100%">Step 3<br>Questions w/ratings</button>
+          </div>
+        </div>
+      </div>
+      </nav>
+      <div class="container mt-4">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+            <div class="row">
+              <div class="col-lg-3 col-sm-12">
+                <p class="mb-2">Sex:</p>
+                <div class="radio-buttons d-flex" style="gap: 20px;">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Female
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-12">
+                <p class="mb-2">Age:</p>
+                <input type="text" class="form-control" aria-label="Age">
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <p class="mb-2">Phone:</p>
+                <input type="text" class="form-control" aria-label="Phone">
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-6 col-sm-12">
+                <p class="mb-2">Name:</p>
+                <input type="text" class="form-control" placeholder="Firstname Lastname">
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <p class="mb-2">Email:</p>
+                <input type="text" class="form-control" placeholder="username@domain.com">
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-9 col-sm-12">
+                <p class="mb-2">Address:</p>
+                <input type="text" class="form-control" placeholder="123 Street Name">
+              </div>
+              <div class="col-lg-3 col-sm-12">
+                <p class="mb-2">Apartament or floor:</p>
+                <input type="text" class="form-control" placeholder="B4, 4th Floor, or similar">
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-6 col-sm-12">
+                <p class="mb-2">City:</p>
+                <input type="text" class="form-control" placeholder="City">
+              </div>
+              <div class="col-lg-2 col-sm-12">
+                <p class="mb-2">Zip:</p>
+                <input type="text" class="form-control" placeholder="123">
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <p class="mb-2">Country:</p>
+                <select class="form-select">
+                  <option selected>- Select Country -</option>
+                  <option value="1">Византийская Империя</option>
+                  <option value="2">Римская Империя</option>
+                  <option value="3">Российская Империя</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col" style="display: flex; justify-content: end;">
+                <button type="button" class="btn btn-outline-secondary">Step 2</button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="row">
+              <h5 class="text-center">Question #1: Быть или не быть</h5>
+              <div class="col-lg-6 col-sm-12 mt-3">
+                <img style="width: 100%;" class="rounded" src="img/1600x900.png">
+                <p class="text-muted">A caption for the figure image.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12 mt-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Answer for radio 1
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Answer for radio 2
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    Answer for radio 3
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                  <label class="form-check-label" for="flexRadioDefault4">
+                    Answer for radio 4
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                  <label class="form-check-label" for="flexRadioDefault5">
+                    Answer for radio 5
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                  <label class="form-check-label" for="flexRadioDefault6">
+                    <input type="text" class="form-control" placeholder="Other">
+                  </label>
+                  <p class="text-muted mt-1">A caption for the radio buttons.</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <h5 class="text-center">Question #2: Быть или не быть</h5>
+              <div class="col-lg-6 col-sm-12 mt-3">
+                <img style="width: 100%;" class="rounded" src="img/1600x900.png">
+                <p class="text-muted">A caption for the figure image.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12 mt-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Answer for radio 1
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Answer for radio 2
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    Answer for radio 3
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                  <label class="form-check-label" for="flexRadioDefault4">
+                    Answer for radio 4
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                  <label class="form-check-label" for="flexRadioDefault5">
+                    Answer for radio 5
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                  <label class="form-check-label" for="flexRadioDefault6">
+                    <input type="text" class="form-control" placeholder="Other">
+                  </label>
+                  <p class="text-muted mt-1">A caption for the radio buttons.</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <h5 class="text-center">Question #3: Быть или не быть</h5>
+              <div class="col-lg-6 col-sm-12 mt-3">
+                <img style="width: 100%;" class="rounded" src="img/1600x900.png">
+                <p class="text-muted">A caption for the figure image.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12 mt-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Answer for radio 1
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Answer for radio 2
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault3">
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    Answer for radio 3
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault4">
+                  <label class="form-check-label" for="flexRadioDefault4">
+                    Answer for radio 4
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault5">
+                  <label class="form-check-label" for="flexRadioDefault5">
+                    Answer for radio 5
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault6">
+                  <label class="form-check-label" for="flexRadioDefault6">
+                    <input type="text" class="form-control" placeholder="Other">
+                  </label>
+                  <p class="text-muted mt-1">A caption for the radio buttons.</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <h5 class="text-center">Question #4: Быть или не быть</h5>
+              <div class="col-lg-6 col-sm-12 mt-3">
+                <img style="width: 100%;" class="rounded" src="img/1600x900.png">
+                <p class="text-muted">A caption for the figure image.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12 mt-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Answer for radio 1
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Answer for radio 2
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault3">
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    Answer for radio 3
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault4">
+                  <label class="form-check-label" for="flexRadioDefault4">
+                    Answer for radio 4
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault5">
+                  <label class="form-check-label" for="flexRadioDefault5">
+                    Answer for radio 5
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault6">
+                  <label class="form-check-label" for="flexRadioDefault6">
+                    <input type="text" class="form-control" placeholder="Other">
+                  </label>
+                  <p class="text-muted mt-1">A caption for the radio buttons.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col" style="display: flex; justify-content: end;">
+                <button type="button" class="btn btn-outline-secondary">Step 3</button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <h5>Question #5: Быть или не быть</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="d-flex justify-content-between">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio2">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                    <label class="form-check-label" for="inlineRadio2">5</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                    <label class="form-check-label" for="inlineRadio2">n/a</label>
+                  </div>
+                </div>
+                <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="5"></textarea>
+              </div>
+            </div>
+            <hr class="mt-5">
+            <div class="row mt-5">
+              <div class="col-lg-6 col-sm-12">
+                <h5>Question #6: Быть или не быть</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="d-flex justify-content-between">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio2">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                    <label class="form-check-label" for="inlineRadio2">5</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                    <label class="form-check-label" for="inlineRadio2">n/a</label>
+                  </div>
+                </div>
+                <textarea class="form-control mt-3" placeholder="Write a comment here..." id="exampleFormControlTextarea1" rows="5"></textarea>
+              </div>
+            </div>
+            <hr class="mt-5">
+            <div class="row mt-5">
+              <div class="col-lg-6 col-sm-12">
+                <h5>Question #7: Быть или не быть</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="d-flex justify-content-between">
+                  <div class="btn-group" style="width: 100%;">
+                    <a href="#" class="btn btn-outline-secondary">1</a>
+                    <a href="#" class="btn btn-outline-secondary">2</a>
+                    <a href="#" class="btn btn-outline-secondary">3</a>
+                    <a href="#" class="btn btn-outline-secondary">4</a>
+                    <a href="#" class="btn btn-outline-secondary">5</a>
+                    <a href="#" class="btn btn-outline-secondary">n/a</a>
+                  </div>
+                </div>
+                <textarea class="form-control mt-3" placeholder="Write a comment here..." id="exampleFormControlTextarea1" rows="5"></textarea>
+              </div>
+            </div>
+            <hr class="mt-5">
+            <div class="row mt-5">
+              <div class="col-lg-6 col-sm-12">
+                <h5>Question #8: Быть или не быть</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="d-flex justify-content-between">
+                  <div class="btn-group" style="width: 100%;">
+                    <a href="#" class="btn btn-outline-secondary">1</a>
+                    <a href="#" class="btn btn-outline-secondary">2</a>
+                    <a href="#" class="btn btn-outline-secondary">3</a>
+                    <a href="#" class="btn btn-outline-secondary">4</a>
+                    <a href="#" class="btn btn-outline-secondary">5</a>
+                    <a href="#" class="btn btn-outline-secondary">n/a</a>
+                  </div>
+                </div>
+                <textarea class="form-control mt-3" placeholder="Write a comment here..." id="exampleFormControlTextarea1" rows="5"></textarea>
+              </div>
+            </div>
+            <hr class="mt-5">
+            <div class="row mt-5">
+              <div class="col-lg-6 col-sm-12">
+                <h5>Question #9: Быть или не быть</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="d-flex justify-content-between">
+                  <p>1</p>
+                  <input type="range" class="form-range" min="1" max="5" id="customRange2" style="padding-left: 20px; padding-right: 20px;">
+                  <p>5</p>
+                </div>
+                <textarea class="form-control mt-3" placeholder="Write a comment here..." id="exampleFormControlTextarea1" rows="5"></textarea>
+              </div>
+            </div>
+            <hr class="mt-5">
+            <div class="row mt-5">
+              <div class="col-lg-6 col-sm-12">
+                <h5>Question #10: Быть или не быть</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="d-flex justify-content-between">
+                  <p>1</p>
+                  <input type="range" class="form-range" min="1" max="5" id="customRange2" style="padding-left: 20px; padding-right: 20px;">
+                  <p>5</p>
+                </div>
+                <textarea class="form-control mt-3" placeholder="Write a comment here..." id="exampleFormControlTextarea1" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col" style="display: flex; justify-content: end;">
+                <a href="result.html">
+                  <button type="button" class="btn btn-secondary">Submit</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
